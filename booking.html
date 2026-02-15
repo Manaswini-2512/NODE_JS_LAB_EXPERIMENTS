@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container">
+        <span class="navbar-brand">Ticket Booking</span>
+        <a href="tickets.html" class="btn btn-light">My Tickets</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="card p-4 shadow col-md-6 mx-auto">
+        <h4 class="mb-3 text-center">Book Your Ticket</h4>
+
+        <form action="tickets.html">
+            <input type="text" class="form-control mb-3" placeholder="Source" required>
+            <input type="text" class="form-control mb-3" placeholder="Destination" required>
+            <input type="date" class="form-control mb-3" required>
+            <input type="number" class="form-control mb-3" placeholder="Number of Tickets" required>
+            <button class="btn btn-success w-100">Book Ticket</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
