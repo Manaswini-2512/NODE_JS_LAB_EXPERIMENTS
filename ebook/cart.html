@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h2>BVRIT E-COMMERCE</h2>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a href="register.html">REGISTRATION</a>
+        <a href="index.html">LOGIN</a>
+        <a href="catalog.html">CATALOG</a>
+        <a href="cart.html" class="active">CART</a>
+        <a href="index.html#logoutMsg">LOGOUT</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <h2 class="cart-title">Shopping Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+<tbody>
+                <tr>
+                    <td>Java Programming</td>
+                    <td>2</td>
+                    <td>$29.99</td>
+                    <td>$59.98</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+
+                <tr>
+                    <td>Python Basics</td>
+                    <td>1</td>
+                    <td>$49.99</td>
+                    <td>$49.99</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+
+                <tr>
+                    <td>Web Development</td>
+                    <td>3</td>
+                    <td>$19.99</td>
+                    <td>$59.97</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <h3>Total: $169.94</h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </main>
+
+
+</div>
+ 
+</body>
+</html>

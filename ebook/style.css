@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:#f1f3f5;
+}
+
+nav {
+    background: #2f9e44;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+
+.logout-message {
+    display: none;
+    background: #d3f9d8;
+    color: #2b8a3e;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+#logoutMsg:target {
+    display: block;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+form {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px;
+    background: #228be6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #1c7ed6;
+}
+
+
+.main-content {
+    padding: 40px;
+}
+
+.cart-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-table {
+    width: 85%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cart-table thead {
+    background-color: #f1f3f5;
+}
+
+.cart-table th {
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cart-table td {
+    padding: 15px;
+    text-align: center;
+    color: #555;
+}
+
+.cart-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.cart-table tr:last-child {
+    border-bottom: none;
+}
+
+.cart-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.remove-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #fa5252;
+}
+
+.total-section {
+    width: 85%;
+    margin: 30px auto;
+    text-align: right;
+}
+
+.total-section h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.checkout-btn {
+    background: linear-gradient(135deg, #228be6, #1c7ed6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .cart-table {
+        width: 95%;
+    }
+
+    .total-section {
+        width: 95%;
+    }
+
+    .logout-message {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.book-card:hover {
+    transform: translateY(-5px);
+}
+.book-card h3 {
+    margin-bottom: 10px;
+}
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2f9e44;
+}
+.book-card button {
+    background: #228be6;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.book-card button:hover {
+    background: #1c7ed6;
+}
+
