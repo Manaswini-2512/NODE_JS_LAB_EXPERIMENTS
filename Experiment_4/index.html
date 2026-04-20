@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    #chartContainer {
+      width: 500px;
+      height: 300px;
+      margin: auto;
+    }
+
+    #weatherChart {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h3>24WH1A05A4</h3>
+<h2>Weather App</h2>
+
+<input type="text" id="city" placeholder="Enter city">
+<button onclick="getWeather()">Get Weather</button>
+
+<br><br>
+
+<div id="chartContainer">
+  <canvas id="weatherChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
